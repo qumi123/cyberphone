@@ -1,0 +1,10 @@
+.btn--white {
+    box-shadow: 0 4px 5px $color-blue-3;
+    @include style-button($bd-1 solid $color-blue-2, $pd-3, $pd-4, $bd-2, transparent);
+    @include style-text($fs-1, $fw-2, $color-blue-2);
+}
+
+.btn--blue {
+    @include style-button(none, $pd-3 + 2, $pd-4, $bd-2, linear-gradient(120deg, $color-white-2, $color-blue-2));
+    @include style-text($fs-1, $fw-2, $color-white-3);
+}
